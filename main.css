@@ -60,14 +60,4 @@ li, input {
 
 .inactive {color: #050; text-shadow: none;}
 
-#warning {
-    position:absolute;
-	display: none;
-	z-index: 1;
-    left: 100px; top: 100px;
-	font-family: 'Josefin Sans', sans-serif; font-size: 48px;
-	color: #F00; font-weight: 700;
-	text-shadow: 2px 2px 4px #F55, -2px -2px 4px #F55;
-}
-/*span {font-size: 48px}*/
-
+.error {color: red; text-shadow: 2px 2px 4px #F44, -2px -2px 4px #F44;}

@@ -3,7 +3,11 @@ $(document).ready(function () {
     
     var verify = function(entry) {
         if (String(entry) === "")
+        {
+            $('ul').append('<li class="active error">Entry must contain text</li>');
+            setTimeout(function () { $(".error").fadeOut(); }, 1000);
             return false;
+        }
         else if (String(entry).length > 20)
             return String(entry).substring(0,20);
         else if (String(entry).match(/^[\s+]$/))
